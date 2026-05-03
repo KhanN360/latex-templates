@@ -1,0 +1,88 @@
+\documentclass[10pt]{article}
+\usepackage{fancyhdr}
+\usepackage[margin = 1 in]{geometry}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[skip=10pt plus1pt]{parskip}
+\usepackage{placeins} % in preamble
+
+% Bib
+\usepackage[numbers]{natbib}
+\bibliographystyle{plain}
+
+% Math
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+
+% Long Table
+\usepackage{longtable}
+
+% Clickable Reference
+\usepackage{hyperref}
+
+\newcommand{\pfrac}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\ppfrac}[2]{\frac{\partial^2 #1}{\partial #2^2
+}}
+
+% Inputting code
+\usepackage{listings}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+
+\lstset{style=mystyle}
+\newcommand{\kepstd}{$k$-$\epsilon$ Standard Wall Function }
+
+
+\begin{document}	
+	\pagestyle{fancy}
+	\fancyhead{}
+	\fancyhead[L]{CLASS NAME}
+	\fancyhead[C]{ASSIGNEMNT NAME}
+	\fancyhead[R]{Khanh Nguyen}
+	\fancyfoot[C]{Page \thepage}
+
+  % \begin{figure}[h]
+  %  \centering
+  %  \includegraphics[width=0.5\textwidth]{spiral}
+  %  \label{fig:sin}
+  %  \caption{Example of a parametric plot ($\sin (x), \cos(x), x$)}
+  % \end{figure}
+	
+	
+	hELLO
+	
+
+	
+	
+	%%%%%%%%%%%%%%%%%%%%
+	% Bibliography
+	%%%%%%%%%%%%%%%%%%%%
+	\clearpage
+  % Need to create a file called references.bib to use this
+  \bibliography{references}
+	
+	
+\end{document}
